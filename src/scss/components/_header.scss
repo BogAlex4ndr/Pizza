@@ -1,0 +1,32 @@
+.header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5% 5%;
+    background: white;
+    padding-top: 43px;
+    h1 {
+        color: #181818;
+        font-size: 24px;
+        letter-spacing: 1%;
+        text-transform: uppercase;
+        font-weight: 800;
+      }
+  
+      p {
+        color: #7b7b7b;
+      }
+}
+
+.logo-conteiner {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.header__logo {
+    img {
+        width: 38px;
+        height: 38px;
+    } 
+}

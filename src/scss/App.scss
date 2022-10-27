@@ -1,0 +1,19 @@
+@import 'normalise';
+@import 'variables';
+@import 'components/all';
+
+.App {
+    a {
+        text-decoration: none;
+    }
+    max-width: 1440px;
+    margin: 20px auto;
+    background-color: #f6f6f6;
+    border-radius: 40px;
+}
+body {
+    background: $background no-repeat fixed;
+    background-size: cover;
+}
+
+
