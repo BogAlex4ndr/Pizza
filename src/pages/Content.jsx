@@ -1,7 +1,7 @@
 import React from 'react';
-import Categories from './Categories';
-import PizzaBlock from './PizzaBlock';
-import Sort from './Sort';
+import Categories from '../components/Categories';
+import PizzaBlock from '../components/PizzaBlock';
+import Sort from '../components/Sort';
 // import pizzas from '../assets/pizzas.json';
 
 export default function Content() {
@@ -11,7 +11,7 @@ export default function Content() {
         <Categories />
         <Sort />
       </div>
-      <PizzaBlock/>
+      <PizzaBlock />
     </div>
   );
 }

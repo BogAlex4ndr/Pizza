@@ -3,7 +3,20 @@
 .categories {
   ul {
     display: flex;
-    flex-wrap: wrap;
+
+    @media (max-width: 800px) {
+      width: 660px;
+      overflow: auto;
+    }
+    @media (max-width: 600px) {
+      width: 420px;
+      overflow: auto;
+    }
+
+    @media (max-width: 400px) {
+      width: 360px;
+      overflow: auto;
+    }
 
     li {
       background-color: #f9f9f9;
@@ -29,6 +42,3 @@
     }
   }
 }
-
-
-

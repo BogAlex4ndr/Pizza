@@ -23,7 +23,7 @@ export default function Header(props) {
             <Link to='/cart' className='button button--cart'>
               <span>price</span>
               <div className='button__delimiter'></div>
-              <BsCart />
+              <BsCart className='button-cart-icon'/>
             </Link>
           </div>
         </div>

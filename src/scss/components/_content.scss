@@ -4,6 +4,12 @@
     justify-content: space-between;
     align-items: center;
     margin: 5% 5%;
+    @media (max-width:1200px) {
+      flex-direction: column-reverse;
+      .categories {
+        margin-top: 25px;
+      }
+    }
   }
 
   .content__title {
@@ -15,3 +21,5 @@
     margin: 5% 5%;
 
   }
+
+  
