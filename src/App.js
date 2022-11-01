@@ -1,12 +1,19 @@
 import './scss/App.scss';
 import Header from './components/Header';
 import Content from './components/Content';
+import { Route, Routes } from 'react-router-dom';
+import NotFound from './pages/NotFound';
+import Cart from './pages/Cart';
 
 function App() {
   return (
     <div className='App'>
       <Header />
-      <Content />
+      <Routes>
+        <Route path='/' element={<Content />} />
+        <Route path='/cart' element={<Cart/>}/>
+        <Route path='*' element={<NotFound />} />
+      </Routes>
     </div>
   );
 }
