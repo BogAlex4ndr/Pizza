@@ -1,0 +1,20 @@
+@import '../../scss/variables';
+.root {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid $orange;
+  border-radius: 10px;
+  padding: 12px 20px;
+  width: 300px;
+  transition: all 0.15s ease-in-out;
+}
+
+.search__wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  .closeicon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+  }
+}

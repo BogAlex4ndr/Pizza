@@ -1,52 +1,164 @@
 [
   {
-    "id": 11,
-    "img": "img/pizza-chissburger.svg",
-    "title": "Чизбургер-пицца",
-    "types": [0, 1],
-    "sizes": [26, 30, 40],
-    "price": 10,
-    "category": 0,
-    "rating": 2
+   "id": 1,
+   "img": "img/pizza-chissburger.svg",
+   "title": "ЧИЗБУРГЕР-ПИЦЦА",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 10,
+   "category": 1,
+   "rating": 2
   },
   {
-    "id": 22,
-    "img": "img/pizza-cheese.png",
-    "title": "Сырная",
-    "types": [1],
-    "sizes": [26, 40],
-    "price": 12,
-    "category": 0,
-    "rating": 4
+   "id": 2,
+   "img": "img/pizza-cheese.png",
+   "title": "СЫРНАЯ",
+   "types": [
+    1
+   ],
+   "sizes": [
+    26,
+    40
+   ],
+   "price": 12,
+   "category": 2,
+   "rating": 4
   },
   {
-    "id": 33,
-    "img": "img/pizza-shrimps.png",
-    "title": "Креветки по-азиатски",
-    "types": [0],
-    "sizes": [30, 40],
-    "price": 15,
-    "category": 0,
-    "rating": 3
+   "id": 3,
+   "img": "img/pizza-shrimps.png",
+   "title": "КРЕВЕТКИ ПО-АЗИАТСКИ",
+   "types": [
+    0
+   ],
+   "sizes": [
+    30,
+    40
+   ],
+   "price": 15,
+   "category": 2,
+   "rating": 3
   },
   {
-    "id": 44,
-    "img": "img/pizza-chicken.png",
-    "title": "Сырный цыпленок",
-    "types": [0, 1],
-    "sizes": [26, 30, 40],
-    "price": 13,
-    "category": 0,
-    "rating": 2
+   "id": 4,
+   "img": "img/pizza-chicken.png",
+   "title": "СЫРНЫЙ ЦЫПЛЕНОК",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 13,
+   "category": 3,
+   "rating": 2
   },
   {
-    "id": 55,
-    "img": "img/pizza-suprim.jpg",
-    "title": "Суприм",
-    "types": [0, 1],
-    "sizes": [26, 30, 40],
-    "price": 13,
-    "category": 0,
-    "rating": 1
+   "id": 5,
+   "img": "img/pizza-suprim.jpg",
+   "title": "СУПРИМ",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 13,
+   "category": 4,
+   "rating": 1
+  },
+  {
+   "id": 6,
+   "img": "img/pizza-chissburger.svg",
+   "title": "ПИЦЦА КАЗАЦКАЯ",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 10,
+   "category": 3,
+   "rating": 2
+  },
+  {
+   "id": 7,
+   "img": "img/pizza-cheese.png",
+   "title": "ПИЦЦА ДЬЯБОЛА",
+   "types": [
+    1
+   ],
+   "sizes": [
+    26,
+    40
+   ],
+   "price": 12,
+   "category": 2,
+   "rating": 4
+  },
+  {
+   "id": 8,
+   "img": "img/pizza-shrimps.png",
+   "title": "ПИЦЦА ГАВАЙСКАЯ",
+   "types": [
+    0
+   ],
+   "sizes": [
+    30,
+    40
+   ],
+   "price": 9,
+   "category": 1,
+   "rating": 3
+  },
+  {
+   "id": 9,
+   "img": "img/pizza-chicken.png",
+   "title": "ПИЦЦА ПИКАНТНАЯ С ГРИБАМИ",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 14,
+   "category": 4,
+   "rating": 2
+  },
+  {
+   "id": 10,
+   "img": "img/pizza-suprim.jpg",
+   "title": "ПИЦЦА ПРОШУТТО С ОЛИВКАМИ И ПАРМЕЗАНОМ",
+   "types": [
+    0,
+    1
+   ],
+   "sizes": [
+    26,
+    30,
+    40
+   ],
+   "price": 19,
+   "category": 4,
+   "rating": 1
   }
-]
+ ]

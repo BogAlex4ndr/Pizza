@@ -2,6 +2,7 @@ import React from 'react';
 import pizza from '../assets/img/logo-pizza.svg';
 import { BsCart } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import Search from './Search';
 
 export default function Header(props) {
   return (
@@ -19,6 +20,7 @@ export default function Header(props) {
               </div>
             </div>
           </Link>
+          <Search/>
           <div className='header__cart'>
             <Link to='/cart' className='button button--cart'>
               <span>price</span>

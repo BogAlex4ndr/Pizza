@@ -14,6 +14,9 @@
 body {
     background: $background no-repeat fixed;
     background-size: cover;
+    @media (max-width: 400px) {
+       background-size: contain;
+    }
 }
 
 
