@@ -1,11 +1,13 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+
 // import ReactPaginate from 'react-paginate';
 import Categories from '../components/Categories';
 // import Pagitanion from '../components/Pagination';
 import PizzaBlock from '../components/PizzaBlock';
 import Sort from '../components/Sort';
-import { setCategoryId } from '../redux/slices/filterSlice';
+import { setCategoryId  } from '../redux/slices/filterSlice';
+
 // import pizzas from '../assets/pizzas.json';
 
 export default function Content() {

@@ -1,7 +1,7 @@
 .cart__wrapper {
   max-width: 800px;
   margin: 0 auto;
-  
+
   .cart-head {
     display: flex;
     justify-content: space-between;
@@ -35,16 +35,21 @@
         width: 1.2rem;
         height: 1.2rem;
       }
+      &:hover {
+        color: black;
+      }
     }
   }
   .cart-item-conteiner {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding-bottom: 20px;
+    flex-wrap: wrap;
   }
   .cart__item {
     display: flex;
+    align-items: center;
   }
 
   .cart__info {
@@ -59,4 +64,99 @@
     justify-content: space-between;
     padding-bottom: 40px;
   }
+}
+
+.cart__item-image {
+  img {
+    max-width: 100px;
+    max-height: 100px;
+  }
+  margin-right: 10px;
+}
+
+.cart-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  border: 2px solid $orange;
+  padding: 5px 10px;
+  min-width: 30px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.cart__counter {
+  span {
+    font-weight: bolder;
+    font-size: large;
+  }
+}
+
+.cart-summa {
+  font-weight: bolder;
+  font-size: large;
+}
+
+.cart-delet-item {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  color: black;
+  gap: 5px;
+  background-color: $gray-line;
+  border-radius: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $orange;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 2px 2px 5px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.button-back {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  color: black;
+  gap: 5px;
+  background-color: $gray-line;
+  border-radius: 100%;
+  padding: 5px 10px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid $orange;
+  font-weight: bolder;
+  font-size: large;
+  box-shadow: 2px 2px 5px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+
+.cart__item-title {
+  width: 200px;
+}
+
+.cart--empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }

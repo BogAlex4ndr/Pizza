@@ -14,9 +14,13 @@ const filterSlice = createSlice({
     },
     setSortType(state, action) {
       state.sort = action.payload;
-    }
+    },
+    setFilter(state, action) {
+      state.categoryId = action.payload.categoryId;
+      state.sort.sortProperty = action.payload.sort;
+    },
   },
 });
 
-export const { setCategoryId, setSortType } = filterSlice.actions;
+export const { setCategoryId, setSortType, setFilter } = filterSlice.actions;
 export default filterSlice.reducer;

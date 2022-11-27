@@ -1,13 +1,28 @@
 import React, { useState } from 'react';
 import { v4 } from 'uuid';
+import { useDispatch } from 'react-redux';
+import { addItem } from '../redux/slices/cartSlice';
 
 export default function PizzaItem(props) {
-  const [activeType, setActiveType] = useState();
-  const [activeSize, setActiveSize] = useState();
+  const dispatch = useDispatch()
+  const [activeType, setActiveType] = useState(0);
+  const [activeSize, setActiveSize] = useState(1);
   const pizzaTypeName = ['тонкое', 'традиционное'];
 
+  const onClickAdd = () => {
+    const item = {
+      id: props.id,
+      title: props.title,
+      price: props.price,
+      image: props.img,
+      type: pizzaTypeName[activeType],
+      size: props.sizes[activeSize],
+    };
+    dispatch(addItem(item))
+  };
+
   return (
-   <div className='pizza-block-wrapper'>
+    <div className='pizza-block-wrapper'>
       <div className='pizza-block'>
         <img className='pizza-block__image' src={props.img} alt='Pizza' />
         <h4 className='pizza-block__title'>{props.title}</h4>
@@ -35,7 +50,7 @@ export default function PizzaItem(props) {
         </div>
         <div className='pizza-block__bottom'>
           <div className='pizza-block__price'>от {props.price} $</div>
-          <button className='button button--outline button--add'>
+          <button onClick={onClickAdd} className='button button--outline button--add'>
             <svg
               width='12'
               height='12'
@@ -51,6 +66,6 @@ export default function PizzaItem(props) {
           </button>
         </div>
       </div>
-   </div>
+    </div>
   );
 }
