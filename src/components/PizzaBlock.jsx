@@ -12,7 +12,6 @@ import qs from 'qs';
 import { sortBy } from './Sort';
 
 export default function PizzaBlock({ categoryValue, page, sortValue }) {
-  // const [piza, SetPiza] = React.useState(pizzas);
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const [items, setItems] = React.useState([]);
@@ -41,26 +40,22 @@ export default function PizzaBlock({ categoryValue, page, sortValue }) {
     const category = categoryValue > 0 ? `category=${categoryValue}` : '';
     const sorting = sortType;
     const search = searchValue ? `&search=${searchValue}` : '';
-    // fetch(
-    //   `https://635fa8b13e8f65f283b84346.mockapi.io/items?${category}&sortBy=${sorting}${search}`,
-    // )
-    //   .then((res) => {
-    //     return res.json();
-    //   })
-    //   .then((arr) => {
-    //     setItems(arr);
-    //     setIsLoading(false);
-    //   });
-    axios
-      .get(
-        `https://635fa8b13e8f65f283b84346.mockapi.io/items?${category}&sortBy=${sorting}${search}`,
-      )
-      .then((res) => {
+
+    const fetchPizza = async () => {
+      try {
+        const res = await axios.get(
+          `https://635fa8b13e8f65f283b84346.mockapi.io/items?${category}&sortBy=${sorting}${search}`,
+        );
         setItems(res.data);
         setIsLoading(false);
-      });
+      } catch (error) {
+        alert('Pizzas loading fail');
+      }
 
-    window.scrollTo(0, 0);
+      window.scrollTo(0, 0);
+    };
+
+    fetchPizza();
   }, [categoryValue, sortType, searchValue, page]);
 
   return (
